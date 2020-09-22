@@ -18,7 +18,7 @@ public class LoginTrelloTests extends TestBase {
     public void loginAtlassianAccPositiveTest() throws InterruptedException {
          //clickOnWelcomePage
 
-        app.session().login("jmdonskaya@gmail.com", "trello123DS");
+        app.session().login("jmdonskaya@gmail.com", "Trello123DS");
         //ER userLoggedIn
         Assert.assertTrue(app.header().isAvatarPresent());
         //is user correct
@@ -26,18 +26,18 @@ public class LoginTrelloTests extends TestBase {
         // wd.findElements(By.xpath("")).size();
     }
 
-    @Test
-    public void negativeLoginAtlassianAccPositiveTest() throws InterruptedException {
+   // @Test
+   // public void negativeLoginAtlassianAccPositiveTest() throws InterruptedException {
         //clickOnWelcomePage
 
-        app.session().login("jmdonskaya@gmail.com", "trelloDS");
-        //ER userLoggedIn
-        Assert.assertTrue(app.session().isLoginErrorPresent());
-        Assert.assertFalse(app.header().isAvatarPresent());
+   //     app.session().login("jmdonskaya@gmail.com", "trelloDS");
+   //     //ER userLoggedIn
+   //     Assert.assertTrue(app.session().isLoginErrorPresent());
+   //     Assert.assertFalse(app.header().isAvatarPresent());
         //is user correct
 
         // wd.findElements(By.xpath("")).size();
-    }
+ //   }
 
 
 }

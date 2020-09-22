@@ -22,7 +22,7 @@ public class BoardCreationTests extends TestBase {
     int before = app.board().getBoardsCount();
     app.header().clickOnPlusButton();
     app.header().selectCreateBoard();
-    app.board().fillBoardForm("new qa24 board", "private");
+    app.board().fillBoardForm("new qa24 board2", "private");
     app.board().confirmBoardCreation();
     app.header().returnOnHomePage();
     int after = app.board().getBoardsCount();
