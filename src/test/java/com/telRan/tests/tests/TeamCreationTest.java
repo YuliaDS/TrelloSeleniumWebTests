@@ -1,5 +1,6 @@
 package com.telRan.tests.tests;
 
+import com.telRan.tests.model.Team;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -12,7 +13,9 @@ public class TeamCreationTest extends TestBase {
 
         app.header().clickOnPlusButton();
         app.header().selectCreateTeam();
-        app.team().fillTeamCreationForm("qa 24", "Продажи CRM");
+        app.team().fillTeamCreationForm(new Team()
+                .setTeamName("qa 24")
+                .setType("Продажи CRM"));
 
         app.team().submitTeamCreationForm();
         app.team().selectIwillDoThisLaterButton();
