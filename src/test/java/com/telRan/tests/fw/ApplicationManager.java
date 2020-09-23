@@ -11,6 +11,7 @@ public class ApplicationManager {
     SessionHelper session;
     BoardHelper board;
     HeaderHelper header;
+    TeamHelper team;
 
 
     public void init() {
@@ -23,6 +24,11 @@ public class ApplicationManager {
         session = new SessionHelper(wd);
         board = new BoardHelper(wd);
         header = new HeaderHelper(wd);
+        team = new TeamHelper(wd);
+    }
+
+    public TeamHelper team() {
+        return team;
     }
 
     public SessionHelper session() {

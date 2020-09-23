@@ -11,7 +11,7 @@ public class TestBase {
     @BeforeClass
     public void setUp() throws InterruptedException {
         app.init();
-        app.session().login("jmdonskaya@gmail.com", "trello123DS");
+        app.session().login("jmdonskaya@gmail.com", "Trello123DS");
 
     }
 
